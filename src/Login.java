@@ -20,12 +20,13 @@ public class Login {
                 String contraseña = "";
                 try (Connection connection = DriverManager.getConnection(url, usuario, contraseña)) {
                     System.out.println("Conexión realizada con éxito");
-                    String consulta="SELECT username, password FROM usuario";
+                    //String consulta="SELECT username, password FROM usuario";
+                    String consulta = "SELECT * FROM usuario";
                     Statement statement=connection.createStatement();
                     ResultSet resultSet=statement.executeQuery(consulta);
                     while (resultSet.next()){
-                        if (ingresoUsuario.getText().equals() && ingresoContraseña.getText().equals()){
-                            JFrame frame1 = new JFrame();
+                        if (ingresoUsuario.getText().equals(resultSet.getString("username")) && ingresoContraseña.getText().equals(resultSet.getString("password"))){
+                            JFrame frame1 = new JFrame("Registros");
                             frame1.setContentPane(new Registro().panelRegistro);
                             frame1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                             frame1.setSize(800, 600);

@@ -108,7 +108,7 @@ public class Registro {
         botonBusqueda.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JFrame frame = new JFrame();
+                JFrame frame = new JFrame("Ventana de búsqueda");
                 frame.setContentPane(new Busqueda().panelBusqueda);
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frame.setSize(800, 600);

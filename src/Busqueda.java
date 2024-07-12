@@ -55,7 +55,7 @@ public class Busqueda {
             @Override
             public void actionPerformed(ActionEvent e) {
                 JFrame frame3 = new JFrame();
-                frame3.setTitle("Volver");
+                frame3.setTitle("Registro");
                 frame3.setContentPane(new Registro().panelRegistro);
                 frame3.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frame3.setSize(800, 600);
@@ -67,7 +67,7 @@ public class Busqueda {
             @Override
             public void actionPerformed(ActionEvent e) {
                 JFrame frame4 = new JFrame();
-                frame4.setTitle("Volver");
+                frame4.setTitle("Login");
                 frame4.setContentPane(new Login().panelLogin);
                 frame4.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 frame4.setSize(800, 600);

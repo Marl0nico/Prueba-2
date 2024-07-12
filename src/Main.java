@@ -1,7 +1,7 @@
 import javax.swing.*;
 public class Main {
     public static void main(String[] args) {
-        JFrame frame1=new JFrame("Sistema de vehículos");
+        JFrame frame1=new JFrame("Sistema hospitalario");
         frame1.setContentPane((new Login()).panelLogin);
         frame1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame1.setSize(800, 600);
